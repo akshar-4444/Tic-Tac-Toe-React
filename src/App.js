@@ -51,7 +51,7 @@ const App = () => {
           style={{ height: '400px', width: '400px' }}
           className='game-body d-flex flex-wrap justify-content-between align-items-center p-2' >
           {nineArr.map((ele, index) => (
-            <span
+            <button
               disabled={winPossible}
               key={index}
               onClick={() => ele === emptyPlace && handleClick(index + 1)}
@@ -59,7 +59,7 @@ const App = () => {
               className='game-body-sub-div d-flex justify-content-center border align-items-center shadow bg-dark cursor-pointer '
             >
               <h1>{ele}</h1>
-            </span>
+            </button>
           ))}
         </div>
 
